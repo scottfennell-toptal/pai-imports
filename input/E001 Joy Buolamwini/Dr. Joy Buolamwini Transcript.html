@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Dr. Joy Buolamwini Transcript</title></head>
+<body>
+<p><strong>RANA EL KALIOUBY VO:</strong> In the winter of 2020 two Detroit police officers arrived at Robert Williams’ home in Michigan. Without any explanation, they handcuffed him on his front lawn … while his whole family was watching.</p>
+<p>Williams gave the details of his story to a House Judiciary subcommittee the following year.</p>
+<p>[Testimony] - 39:35 - 39:58</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Williams spent the next 30 hours in a Detroit jail. Detectives said he was arrested for federal larceny. The proof … images captured by a surveillance camera and analyzed by a computer algorithm. Yikes!</p>
+<p>[Testimony] - 41:21 - 41:44</p>
+<p>[music drops]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> “The computer got it wrong”</p>
+<p>[music in]</p>
+<p>… as in faulty facial recognition technology wrongfully identified Williams as the culprit.</p>
+<p>This was the first known case of its kind … but it wouldn’t be the last.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> There had been others who had been arrested by that same, uh, police department. And part of this is, these are the stories we know about because in some ways the AI systems are acting as silent witnesses with flaws. That’s Dr. Joy Buolamwini – computer scientist, poet and national bestselling author of the book <em>Unmasking AI</em>.</p>
+<p>And these flaws that she’s talking about have a name. Algorithmic bias. And it can have major consequences, including wrongful arrest. But it can also drive any number of computer-based errors that could directly affect <em>you</em>. Bias could mean a medical misdiagnosis ... a denial of your mortgage application ... or being skipped over as a qualified job applicant.</p>
+<p>[music out]</p>
+<p>I’m an AI optimist. But if we’re not mitigating its pitfalls, we’ll never see its full potential. Which is why in this episode, we're taking algorithmic bias head on … Why does algorithmic bias happen … and how can we avoid it?</p>
+<p>&lt;&lt;Theme music start&gt;&gt;</p>
+<p>I’m Rana el Kaliouby and this is Pioneers of AI.</p>
+<p>&lt;&lt;beat&gt;&gt;</p>
+<p>A podcast taking you behind-the-scenes of the AI revolution.</p>
+<p>&lt;&lt;beat&gt;&gt;</p>
+<p>BEAT 2: THE FIRST SOCIAL ROBOT.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Dr. Joy is one of the leading experts on algorithmic bias … a hero of mine ... someone who, like me , is a BIG believer in AI and a staunch advocate for how we can make it better. But our conversation didn’t start there. It started with us talking about what inspired us to get into tech in the first place.</p>
+<p>[music fades out]</p>
+<p><strong>RANA EL KALIOUBY:</strong> Dr. Joy, I am so excited for our conversation. You and I have crossed paths a number of times. I'm a huge fan of your work, and I just admire all you're doing to make sure AI is just and inclusive for all of us.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong>I'm so excited to be here. I've been following in your path, watching you from afar, being inspired by the work you've been doing. And so I'm so excited to be a guess.</p>
+<p><strong>RANA EL KALIOUBY:</strong> And early on, I guess you met the MIT robot Kismet, uh, which for our listeners who are not familiar with Kismet, Kismet is a, um, I guess. Gizmo-looking robot with like blue eyes and furry eyebrows, very 90s style. But I don't know if you know that, but Kismet inspired my own research because it was the very first social robot that had social and emotional intelligence. And so I've really looked at Kismet as an inspiration for a lot of my work. But how did you meet Kismet?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Okay, I think we were similarly inspired. So when I was little, I had a very strict diet. And by diet, I mean media diet. So I could only watch PBS.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Love that. I should have done that with my kids.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> It's a different time. You know, we were new, we were immigrants. My parents weren't exactly sure what else was on TV. So PBS seemed safe. So I would, you know, I would watch Nova, uh, American scientific, American frontiers, all of this. So I was watching one of these shows and they had an episode about robots.</p>
+<p>[TV clip plays] - 00:00 - 00:04</p>
+<p>&lt;&lt;audio dips under&gt;&gt;</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> This <em>was in fact</em> the PBS show “Nova,” in 2006 when Dr. Joy was still in elementary school.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And I remember seeing at that time, uh, graduate students, Cynthia Brazeal. And she was the one who had created Kismet, the social robot.</p>
+<p>[TV clip plays] - 00:09 - 00:18</p>
+<p>[music fades in]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … I hadn't seen a robot that was actually developed to interact with humans. And so the big expressive eyes and the ears and all of that, I was so captivated. And I was curious if I could make something like that. And so from then on, I said, I wanted to be a robotics engineer and go to MIT. I didn't know there were requirements.</p>
+<p>… And I think also, uh, seeing that it was a woman behind it as well. I didn't even question it. It was just like, Oh yeah, this is of course something I could do.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Growing up I had a similar experience. My mom was one of the first female computer programmers in the Middle East. And she paved the way for me and so many other women.</p>
+<p>For Dr. Joy, her childhood dreams of going to MIT would come true. She would even end up working with the same code used to program Kismet.</p>
+<p>But her first stop was Georgia Tech, where she was admitted as an undergrad to study computer science.</p>
+<p>Unsurprisingly, her class … didn’t look like her. The student body was … and still is … largely white and male. But Dr. Joy’s attention was turned towards the non-human residents on campus. You know - the cool robots in the computer science lab.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> ... When I was working on one of my first, uh, robots, Simon … I was at the time trying to get a robot to play a turn taking game with me called peekaboo, right?</p>
+<p>[music fades out]</p>
+<p>Peekaboo, you cover the eyes, you uncover the eyes. Peekaboo, I see you. Peekaboo doesn't really work if your robot doesn't see you.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And my robot wasn't seeing me. And so that's when I really started thinking, okay, what's going on, on the computer vision side, because it was detecting the face of my roommate who was fair skin, green eyes, red hair, you know, not necessarily detecting me.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> This was Dr. Joy’s <em>first</em> experience of being UN-SEEN by a robot. And she let it slide.</p>
+<p>But the second time came a few years later – in graduate school at MIT. This time it was too blatant of a mistake to ignore.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> So I had taken this course, science fabrication, and I wanted to explore the concept of shape shifting.</p>
+<p>[music out]</p>
+<p>We had six weeks, so all right, not changing any laws of physics anytime soon. So maybe instead of. Shifting my physical appearance, maybe I could somehow alter my appearance in a mirror.</p>
+<p>And so I worked on this project called the Aspire Mirror, and I found this material, half silvered glass, which essentially has a really cool property. If you have something black behind it, it behaves just like a regular mirror. But if there's light behind it, the light will shine through. So I thought, huh, if I put a black background and then add a digital mask, then it would make it seem as though that mask were on my face.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Okay.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And so this is all digital first, right? And it worked. Okay, this is so cool. But now let me see if it can, that filter, can follow me.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Right. So I needed to get a webcam and then on the webcam hooked it up to my laptop. Now, I needed some face-tracking software to achieve the effect. So nothing to do with social justice or anything like this.</p>
+<p><strong>RANA EL KALIOUBY:</strong> You just wanted like some facial recognition technology to like just track face basically.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Yeah, so I could have this cool aspire mirror thing. thing. And so I wanted to look like a lion or look like Serena Williams. Now, maybe Roger Federer, right? And so when I was trying to get that to work, that's when I noticed it wasn't really picking up my face, uh, consistently. So I draw a face on my palm, hold it up to the camera. It was not the best face. It was very much the smiley face sort of thing. And the face on my palm was detected. So after that, I was like, okay, anything is up for grabs.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> It was around Halloween at the time and Dr. Joy had a white plastic mask by her desk – the kind you find at the drugstore. As an experiment, she reached out … and put it on.</p>
+<p>[music out]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … It's not even halfway on my face before it starts being detected. I take it off. My face is not detected. I'm just, you you can't even make this up …</p>
+<p><strong>RANA EL KALIOUBY:</strong> … So can you talk a little bit about that? Like, what was first thought? Like, did you think it was a bug in the system? Did you, were you angry? Like, what was the emotion?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Well, I mean, people with dark skin have been seeing the limitations of cameras for a while, right? So before we even get to computer vision, if you're thinking, uh, film, you know, the early film. Uh, kind of technology, the way the chemical solutions were created, they were optimized to expose lighter skin.</p>
+<p>So if you see photos from back in the day, right, you might just see dark skinned people and you see the eye whites and maybe, uh, the teeth and those are actually design, uh, decisions. It didn't have to be that way. And in fact, I remember the, uh, reading about the Oprah Winfrey show actually getting specific cameras from Philips.</p>
+<p>I think they were LDK series that had microchips that were optimized to actually show darker skin better. So that's like, okay, these are design decisions. And then Kodak, uh, changed, um, their film when chocolate companies and furniture companies were complaining. You can't see the fine grain of my mahogany.</p>
+<p>Some of us got a windfill. Now they're marketing it so good it can shoot a black horse at night. If it can shoot a black horse at night, it might be able to show my - so in some ways, it wasn't It wasn't so surprising that in the world of vision, right, that there are these, uh, issues. But what I was surprised about was I had all the lights on.</p>
+<p>… And so that's I was like, hmm, I think there might be something more here.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Something more than just technical limitations of cameras failing to pick up darker skin tones.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> I was curious, you know, and then it also did make me think of, uh, the book is called Black Skin, White Mask, uh, from, uh, Fanon.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> that's Frantz Fanon, the political philosopher.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> He was talking about the ways in which people of color have to mask who they are in order to be rendered visible or seen by society as well. So it almost seemed too literal. I was like, yeah, I can't make this up. So I responded with curiosity. Why is this happening? Is it because of this specific environment, or is there a broader pattern here? So it really became that launching point for exploring more about computer vision, but also AI more broadly, like, what else could be going wrong? …</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> The programs that power facial recognition … are built by people. Which means they are built with the same biases — unconscious or otherwise — that are already baked into our society.</p>
+<p>Technology is meant to be the great equalizer — bringing access and opportunity to everyone. But if the computer systems we build can't even see US … we’re just reproducing the same inequities that already exist.</p>
+<p>As a computer scientist, Dr. Joy wanted to get to the root of this coded bias. How was this happening … and how widespread was it?</p>
+<p>That’s in a minute.</p>
+<p>[music fades out]</p>
+<p>[MIDROLL]</p>
+<p>BEAT 4: IT’S THE DATA.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Dr. Joy wanted to know: how are we training our machines to see?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … So our human fingerprints are all over AI and automated, uh, systems. … And so this is engineer hat. comes on.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Yep.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> What's going on? Let's debug it. Let's figure out what's happening. And so this led down a whole exploration where I started looking at a little bit of how we even, uh, train machines to detect human faces. … And so it turned out they were using this concept of machine learning, right?</p>
+<p>So let's provide a data set of examples of faces and use that as a way of training an AI system to detect a human face. So I started looking at those data sets and I started looking at the most popular data sets and I started saying, Oh, I think I'm seeing where the problem is coming from. So I would look at a gold standard benchmark, right? This is the one we're using to judge progress in the field.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Benchmark data … as in THE standard dataset of sample faces. Now, you’d want your benchmark to be universal … to represent the diversity of the world’s population.</p>
+<p>[music out]</p>
+<p>But this benchmark data – the goto sets of faces – did not do that.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Over 70 percent male, 80 percent lighter skinned individuals. And then I would look and I was like, Oh, and they're taking it from images of public. Figures. And oftentimes politicians. So I started to see what I was calling power shadows. So you have the power shadow of the patriarchy, right?</p>
+<p>When you look at, uh, women's uh, representation, when it comes to political positions, you know, you tend to be in the 30 percent or less. a zone so that men were showing up 70 percent or more in these data sets wasn't too surprising once you start considering the source. Similarly, when you're looking at the prevalence of lighter skinned individuals, even though the majority of people on earth would be classified as people of color, who's more likely to have their photos available online.</p>
+<p>And then there was another technical piece about it. So for computer scientists to collect large sets of data. We ain't got time and we're lazy. So what we're going to usually do is run some kind of automated system.</p>
+<p><strong>RANA EL KALIOUBY:</strong> To scrape data off the internet, basically.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Absolutely. And so to get face data sets, people would create face detectors. That way you're not scraping every image, just the image that has a face. but a face that has been detected. So I also found out that the face detectors themselves were especially more likely to fail on darker skinned faces.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Not only were the standard data sets overwhelmingly skewed ... the tools being used to build those data sets were only further adding to the problem.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And then, you know, scientists had, okay, let's run an experiment.</p>
+<p>[music fades out]</p>
+<p>One of one is not enough make a generalized conclusion. So that's what led to, um, uh, my research.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Again, I think that's a very important concept. The training data is really important, and it's not just the quantity of the data, but the diversity of the examples you're using in the training dataset, whatever problem you're solving with machine learning. But it's also the validation. It's the, what, what we're testing on, right?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Absolutely.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Because if it's not representative of humanity, people who are going to be using the system, it's going to end up being biased. So at Affectiva, um, the company I started around emotion recognition early on, we also kind of faced this idea of data and algorithmic bias.</p>
+<p>We did a lot of work in China and we were recognizing people's facial expressions and smiles. And we got a call from one of our biggest clients in China and they were like, this technology doesn't work. Like, you're not detecting any smiles across our Chinese kind of customers or users. And we looked at it and we basically realized that we didn't have enough representation of Chinese population, but also we were putting everybody in the same bucket, right? Like we, as we were testing these algorithms, we weren't really like paying attention to subpopulations.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Absolutely. I used to talk about so much of this data being pale male data and that's destined to fail the rest world.</p>
+<p>[music fades in]</p>
+<p>So there's an undersampled majority that was implicit in these data sets that I was seeing. And I started to think, what does this mean outside of the face arena? …</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Dr. Joy coined the term coded gaze … it’s her way for describing algorithmic bias … And it’s based on feminist theory.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … The male gaze, uh, is this concept of who is prioritized and whose perspective influences the choices of what we see in visual representation. And so when it comes to, let's say, art, and they talk about male gaze in art, you would look at how women were being posed as objects of desire for a male viewer.</p>
+<p>[music fades out]</p>
+<p>… also, if you're thinking about the white gaze as well, Toni Morrison used to talk about this in relation to her writing, where if you're writing a book for a particular audience and you're talking about a Russian, no one's saying, no one's relate the Russian character because of this, that, or the other.</p>
+<p>You're seeing the universal humanity of that person. Yet if you're talking about somebody who was having an African American experience, suddenly you're getting all of these questions about, well, what about the perspective of this white person?... Pointing out the fact that some groups were so used to being centered.</p>
+<p>That when they were no longer centered, it felt destabilizing, but that itself was showing the white gaze and this expectation of whose perspective matters or should be prioritized or even what is considered, uh, worthy. …</p>
+<p><strong>RANA EL KALIOUBY:</strong> … I'm seeing this in AI all over the right? … we need more diversity of people who are building different AI technologies, but also solving different sets of problems.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> I agree with that. But the other part to add some nuance to the conversation that I realized was, It's important to have diverse people and diverse perspectives, but I was the black computer scientist who built the Aspiring Mirror that did not detect my face.</p>
+<p>And so there you also, it's looking at the people involved, but looking at the processes. So in this case, what was I doing? Okay, I need a system that can track my face. GitHub. So I go online, I go to open source place to see if I can find some preexisting code. So just like if you're building, I don't know, you have a backyard fence project, you're not going to go chop all the wood, you go to Lowe's … and you get the pre made parts. So I'll also say, Oh, what are some of the pre made parts that we use? And what's baked into that?</p>
+<p>[music in]</p>
+<p>Because if you change the people, but you don't change the processes, you're still going to be able to perpetuate that kind of discrimination. So I was realizing we had to go back to the roots even more. So the process and the people are both important. …</p>
+<p>BEAT 5: THE IMPACT.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> In a research project, Dr. Joy set out to quantify how accurate facial recognition technology actually was.</p>
+<p>To do this, she created her own dataset of over 1000 diverse faces. Her plan was simple: process this data through facial recognition technology that some of the biggest tech companies were making … and see how well they did.</p>
+<p>But to test these companies, she first needed to figure out how to classify her data. She tried to organize the data by race, but that got messy pretty quick.</p>
+<p>[music out]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … I never felt race was more constructed than when I'm going through ethnic enumeration across different countries, across different times, even looking at the U. S. census, the way labels, uh, changed, right? Over time.</p>
+<p>[music in]</p>
+<p>Talking to my Egyptian friends, you know, and they're like, so, Do we put African American? Do we put white?</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> The next U.S. census in 2030 will include a Middle Eastern or North African category. But before this change, people like me … dont have a clear choice. It’s an example of how flimsy racial enumeration is.</p>
+<p>[music out]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Some of the, um, justifications for doing ethnic enumeration in different countries is supposed to be around discrimination, but we know Arab Americans get discriminated against in all kinds of ways where that's not even, uh, coming through. And then I learned there are all kinds of whites. You know, so. So looking at ethnic enumeration in European countries and also, uh, specific moves that were made to kind of paper over ethnic distinctions, right? In efforts to have a sense of national, unity. And so when I was going through all of this, I was like, all right, let's move from race. Let's move away from ethnicity. And let's look at skin response. Yeah. A close to objective. Right. …</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> She decided to classify the data using the Fitzpatrick scale that’s a classification of skin pigmentation b ased on reaction to UV exposure.</p>
+<p>Then she used her data to evaluate how accurate facial recognition technologies really were.</p>
+<p><strong>RANA EL KALIOUBY:</strong> But so then you basically find that all the face ID systems out there, especially those kind of published by the big tech companies.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> More or less. So I was specifically looking at gender classification and binary gender classification. So I didn't test every kind of task they could have done.</p>
+<p>So whether it's, is there a face, right? Face detection. I was in the Wakanda era of what kind of face, you know? And so for gender classification, I did open source. Systems for my, uh, master's work, as well as, uh, systems from IBM, uh, from Microsoft, uh, from Face which was a company based in China that had access to, uh, over a billion face photos.</p>
+<p>So I wanted to know if this data part mattered or was it the type of data? So I included them there. And then later on we included, uh, Amazon and Kairos.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Kairos is an anti-fraud company that uses facial recognition tech.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And so what we found was for gender classification, binary gender classification. Here's a photo, guess male or female. All of the systems perform better on male labeled faces than female labeled faces.</p>
+<p>They all perform better on lighter-labeled faces and darker-labeled faces. But then this is where it got even more interesting.</p>
+<p>[music out]</p>
+<p>Just like you were saying with your own work with Affectiva, the subpopulations matter. So if we had stopped the story there. Okay, we have this, um, gender bias. We have the skin type bias, but then we did an intersectional analysis.</p>
+<p>So I wanted to see if there were differences between lighter females, lighter males, darker females, darker males. And they were, and the stories weren't all the same. The story that was consistent is they all did the worst on darker females, but some actually perform better on darker males, uh, overall, right?</p>
+<p>And some, the differences between lighter females also changed. And so part of that exploration was saying, you can't just assume the trend is going to be the same. You can have a hunch, you can have an intuition as scientists, we have to test this. And also as product leaders, we also have to test this before we put it out because we can't just assume if we're using these universal benchmarks that aren't representative of the rest of the world, that that aggregate score is A OK.</p>
+<p>[music in] mark</p>
+<p><strong>RANA EL KALIOUBY:</strong> Exactly. You got to look at the details.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Dr. Joy published her findings in a study called <em>Gender Shades</em>. She sent the results to the three companies she audited: Microsoft, IBM, and Face ++.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … IBM got back to us almost immediately.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Amazing.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Uh, and actually invited me to their headquarters to meet with their teams behind the systems. Um, and they had a new model and I actually tested that model. So when I presented the official results of the paper, Uh, at the first FACT conference, Fairness, Accountability, Transparency, …I was able to say, here's where they were then and here's where they are now.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Awesome.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> You know, but something that, uh, struck me was shortly after, uh, there was a report, I think, from the Intercept that said that IBM had been working with the New York Police Department and actually creating tools that would help them search surveillance videos to search people by their hair color, by if they had facial hair and other things.</p>
+<p>Basically, digital profiling enabled by computer vision. And so there was a part of me that's like, okay, it's good that these companies are paying attention and understanding that there are these accuracy gaps, accuracy disparities, but accurate systems can be abused.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> And so in some ways, because I started this kind of research. In such a surveillance adjacent or surveillance heavy space, I really had to grapple with those questions immediately, … And then I'm thinking, okay, if we have accurate facial recognition, think about drones with cameras, with guns. Mistaking civilians for combatants is problematic, but also if you got political enemies.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> That can be abused in other kinds of ways as well. And so it was very much, it forced me immediately, right, to think about the potential for abuse of different types of AI systems, regardless of accuracy.</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Remember Robert Williams who we met at the top of the show … The man who was wrongfully arrested because of faulty facial recognition? Well, he and Dr. Joy connected several times over the past few years.</p>
+<p>She actually presented his story to President Biden and other elected officials during a roundtable discussion about AI.</p>
+<p>When Williams was arrested in 2020, the story made headlines. But it didn’t make change.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … Here's the thing. Three years later, Portia Woodruff was wrongfully accused by an algorithm.</p>
+<p>Same police department, faulty facial recognition. She was eight months pregnant. She was being accused of a carjacking.</p>
+<p>[music fade out]</p>
+<p>I don't know if you, I haven't been eight months pregnant, but I assume it might be hard to jack a car. You know, context clues, people, context clues. … And there had been others who had been arrested by that same, uh, police department. And part of this is these are the stories we know about, because in some ways the AI systems are acting as silent witnesses with flaws.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Right. So these have real world consequences on people's lives.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Yeah. And as AI continues to become more and more mainstream, we're kind of encoding these biases in these everyday decisions, right. …</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> … it might not be, are you getting arrested? It might be, are you getting the job?</p>
+<p><strong>RANA EL KALIOUBY:</strong> Right.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> You know, because you have the bias in the, uh, resume screening, uh, systems, or do you get fired, you know, or hired and things of that nature.</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> We’re going to take a short break. When we come back, we’re moving beyond the problem and talking about solutions. And we find that not all heroes wear capes … stay with us.</p>
+<p>[MIDROLL]</p>
+<p>BEAT 6: WHERE WE GO FROM HERE.</p>
+<p><strong>RANA EL KALIOUBY:</strong> So you founded the, uh, Algorithmic Justice League, and I kind of sometimes picture you parachuting into these companies with a cape.</p>
+<p>… So what do you actually do and what are the sort of campaigns or policy work that you take?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Yeah. So a big part of our work is raising awareness about AI harms and ways to prevent AI harms. And I think now that more people are understanding AI's impact in society, there's even more of an appetite for it. In the early days, if I would mention something like algorithmic bias or AI discrimination, it's okay, what are you on about? Now it's like, and of course we will be addressing the algorithm. So the discourse has changed since 2016 until now. So that has been good to see, but they're also evolving harms and evolving threats. So I think sometimes it's easy to think, okay, I, we know about this problem, but you're not looking at the ways in which it's evolving.</p>
+<p>Another big part of what we do is we fill this gap we were seeing when we did an ecosystem analysis, which is where do you go if you've been harmed by an AI system? The research is necessary. The white papers are great. If I've been hurt, where do I go? And so we actually started building this thing called the X coded experiences platform.</p>
+<p>… And so around that we do different campaigns. One of our recent ones has been for writers.</p>
+<p>So as a new author, I was like, wait, what are they doing with this? the text. How are they training these systems? And so this is a campaign for creative rights. You know, about the four C's. Uh, there should be a consent. There should be compensation. There should be credit. There should be, uh, control. Uh, we also do campaigns around biometrics.</p>
+<p>So one of the latest ones is actually looking at. The introduction of facial recognition into airports. Many people don't know that at the TSA checkpoint, this is supposed to be optional and they're supposed to be signage. We've been documenting the signage covered on a different language turned over the smallest print you ever did see.</p>
+<p>It's not, it's not giving visible to me.</p>
+<p><strong>RANA EL KALIOUBY:</strong> No explicit consent, right?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Exactly. So you have that coercive consent kind of thing. So those are some of the campaigns that we do where people can know their rights, know if there's a right to uh, refusal. We do creative science communications, like the film coded bias, some of the poetry that I do. And then we also advise decision makers who want to know what can we do to prevent AI harm. So for example, in the book, in the epilogue, I talk about the roundtable I had with the president. Biden and Governor Newsom, whose hair is as perfect in person as it looks on TV, verified.</p>
+<p><strong>RANA EL KALIOUBY:</strong> … I think a lot of people want to do the right thing. They just don't know how to. And so providing a roadmap on how to mitigate. These kinds of biases is really powerful.</p>
+<p>&lt;&lt;beat&gt;&gt;</p>
+<p><strong>RANA EL KALIOUBY:</strong> What are some of the applications of AI that you're most excited about?</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> My dad's a professor of medicinal chemistry, pharmaceutical sciences. So his life's work has been devoted to, uh, drug development and he was, working on computer aided drug design using neural nets when I was a little kid. So I would go to his office, he would have these huge silicon graphics machines and you could see different proteins and their, uh, their shapes and all of that.</p>
+<p>And I didn't know much about it other than my dad does cool stuff to help people, you know? And so when I saw, um, AlphaFold come out and the, uh, progress that's been made there in terms of, uh, basically characterizing all known proteins. and their shape. This is huge in terms of what it can enable for scientific breakthroughs for uh, future therapies …</p>
+<p><strong>RANA EL KALIOUBY:</strong> … awesome.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> So, very excited about what that can do for humanity for sure.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Yeah, the intersection of AI and biology and how it's accelerating and really Revolutionizing medicine and health is really powerful.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> But I also do have a bit of a cautionary tale there. I was thinking about one organization called Melalogic. The founder, Avery Smith, his wife died due to melanoma. When they first, you know, noticed something was wrong. It was stage four. It was really late. And I learned that people with darker skin tend to have melanoma diagnosed much later on. And there are two parts to it.</p>
+<p>One are the stories we hear, right? I'm like, Oh, I'm dark skin. I'm protected. I'm good. … But in this case, right, looking at You had had uh, studies coming out from Stanford say, Oh, AI systems are performing better, right?</p>
+<p>When it comes to, uh, detecting melanoma and so forth. And then you look at those data sets and like the face data sets, those data sets for dermatology were also heavily skewed. …</p>
+<p>[music in]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> Meaning that the dermatology data sets also skewed towards lighter skin tones. It’s not just data sets of faces that are biased … we need to examine bias in all types of data sets.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> AI can be a tool here, but we have to be very intentional about being, uh, inclusive.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Yeah, we have to do it right. …</p>
+<p>[music fades out]</p>
+<p><strong>RANA EL KALIOUBY VO:</strong> OK. So we’ve mentioned several times that Dr. Joy is a poet.</p>
+<p>[music fades in]</p>
+<p>And in my experience, to move hearts and minds, you need more than just the data. You need stories, emotions … and a reason to care.</p>
+<p>Listening to Dr. Joy’s poetry … I feel hopeful that we have the power to shape the future .. by putting humans at the center of AI.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Okay. We have to end with a few lines of poetry.</p>
+<p>[music out]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Oh.</p>
+<p><strong>RANA EL KALIOUBY:</strong> So over to you.</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> All right. … I usually try to choose a poem that's based on the kind of conversation we had or the theme of the podcast. So in this case, I'm going to choose one called Unstable Desire. …</p>
+<p>Prompted to competition, where be the guardrails now? Threat in sight will might make right hallucinations taken as prophecy destabilized on a middling journey to outpace to open chase to claim supremacy to reign indefinitely.</p>
+<p>Haste and pace control altering deletion. Unstable desire remains undefeated. The fate of AI still uncompleted.</p>
+<p>Responding with fear, responsible AI beware.</p>
+<p>More than transactional diffusions. Are we not transcendent beings bound in transient forms? Can this power be guided with care, augmenting delight alongside economic destitution? Temporary band aids cannot hold the wind when the task ahead is to transform the atmosphere of innovation. The android dreams entice the nightmare schemes of vice.</p>
+<p>Put of code. Certified human made.</p>
+<p><strong>RANA EL KALIOUBY:</strong> Love that. Love that you are grounding the human at the center of this AI revolution. Thank you for joining us today, Dr. Joy. This was wonderful.</p>
+<p>[music in]</p>
+<p><strong>DR. JOY BUOLAMWINI:</strong> Thank you so much for having me.</p>
+<p>[CREDITS]</p>
+<p>Pioneers of AI is a WaitWhat original.</p>
+<p>Our executive producer is Eve Troeh. Our producer is Rachel Ishikawa [ee-she-kah-wah]. And our associate producer is Jordan Smart.</p>
+<p>Our senior talent executive is Stephanie Stern.</p>
+<p>Mixing and mastering by Aaron Bastinelli and Bryan Pugh [pyew].</p>
+<p>Original music by Ryan Holladay.</p>
+<p>Special thanks to Viki Merrick.</p>
+<p>Our head of podcasts is Leital Molad [lee-TAHL moh-LAHD].</p>
+<p>You can join the conversation on Linkedin, Instagram, TikTok, YouTube, and X – search for @ pioneers of AI.</p>
+<p>Thanks so much for listening.</p>
+</body>
+</html>
